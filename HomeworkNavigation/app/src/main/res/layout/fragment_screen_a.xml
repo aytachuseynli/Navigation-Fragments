@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".ScreenAFragment">
+
+    <TextView
+        android:id="@+id/screenA"
+        android:layout_width="228dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="90dp"
+        android:text="Screen A"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="192dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="76dp"
+        android:text="Go to B"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/screenA"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/screenA"
+        app:layout_constraintTop_toBottomOf="@+id/screenA" />
+</androidx.constraintlayout.widget.ConstraintLayout>

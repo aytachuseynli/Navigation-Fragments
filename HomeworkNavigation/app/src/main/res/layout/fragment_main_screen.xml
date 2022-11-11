@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainScreenFragment">
+
+    <TextView
+        android:id="@+id/mainScreen"
+        android:layout_width="228dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="76dp"
+        android:text="Main Screen"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="192dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="106dp"
+        android:text="Go to A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnX"
+        app:layout_constraintEnd_toEndOf="@+id/mainScreen"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/mainScreen"
+        app:layout_constraintTop_toBottomOf="@+id/mainScreen" />
+
+    <Button
+        android:id="@+id/btnX"
+        android:layout_width="192dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="237dp"
+        android:text="Go to X"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnA"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/btnA"
+        app:layout_constraintTop_toBottomOf="@+id/btnA" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

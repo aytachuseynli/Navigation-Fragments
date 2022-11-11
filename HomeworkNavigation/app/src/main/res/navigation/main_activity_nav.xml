@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/mainScreenFragment">
+
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.aytachuseynli.homeworknavigation.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/toScreenA"
+            app:destination="@id/screenAFragment" />
+        <action
+            android:id="@+id/toScreenX"
+            app:destination="@id/screenXFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenAFragment"
+        android:name="com.aytachuseynli.homeworknavigation.ScreenAFragment"
+        android:label="fragment_screen_a"
+        tools:layout="@layout/fragment_screen_a" >
+        <action
+            android:id="@+id/toScreenB"
+            app:destination="@id/screenBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenYFragment"
+        android:name="com.aytachuseynli.homeworknavigation.ScreenYFragment"
+        android:label="fragment_screen_y"
+        tools:layout="@layout/fragment_screen_y" >
+        <action
+            android:id="@+id/toScreenMain"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenXFragment"
+        android:name="com.aytachuseynli.homeworknavigation.ScreenXFragment"
+        android:label="fragment_screen_x"
+        tools:layout="@layout/fragment_screen_x" >
+        <action
+            android:id="@+id/toScreenXY"
+            app:destination="@id/screenYFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenBFragment"
+        android:name="com.aytachuseynli.homeworknavigation.ScreenBFragment"
+        android:label="fragment_screen_b"
+        tools:layout="@layout/fragment_screen_b" >
+        <action
+            android:id="@+id/toScreenBY"
+            app:destination="@id/screenYFragment" />
+    </fragment>
+</navigation>
